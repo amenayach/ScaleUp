@@ -36,8 +36,8 @@ namespace ScaleUp
         /// <summary>
         /// Resizes a image proportionally
         /// </summary>
-        /// <param name="imageStream">the image stream to resize</param>
-        /// <param name="targetWidth">the targeted width where the targeted height is calculated accordingly</param>
+        /// <param name="imageStream">The image stream to resize</param>
+        /// <param name="targetWidth">The targeted width where the targeted height is calculated accordingly</param>
         public static Stream ResizePicture(Stream imageStream, int targetWidth = 200)
         {
             if (imageStream == null)
