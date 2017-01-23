@@ -57,7 +57,7 @@ namespace ScaleUp
                 return imageStream;
             }
 
-            targetHeight = height * targetHeight / width;
+            targetHeight = height * targetWidth / width;
 
             nImage = new Bitmap(targetWidth, targetHeight);
 

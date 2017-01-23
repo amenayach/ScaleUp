@@ -18,7 +18,7 @@ namespace ScaleUp
         {
             InitializeComponent();
         }
-        
+
         private void MainForm_DragEnter(object sender, DragEventArgs e)
         {
             e.Effect = e.Data.GetDataPresent(DataFormats.FileDrop) ? DragDropEffects.Copy : DragDropEffects.None;
@@ -46,7 +46,7 @@ namespace ScaleUp
                     var bmp =
                         new Bitmap(
                             ImageManager.ResizePicture(
-                                    new MemoryStream(File.ReadAllBytes(file))
+                                    new MemoryStream(File.ReadAllBytes(file)), (int)numTargetWidth.Value
                                 )
                             );
 
